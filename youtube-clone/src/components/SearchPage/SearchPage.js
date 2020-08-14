@@ -1,13 +1,12 @@
 import React from 'react'
-import ChannelRow from './ChannelRow'
-import VideoRow from './VideoRow'
+import {ChannelRow, VideoRow} from '..'
 import TuneOutlinedIcon from '@material-ui/icons/TuneOutlined'
-import './SearchPage.css'
+import styles from './SearchPage.module.css'
 
 function SearchPage() {
     return (
-        <div className="searchPage">
-            <div className="searchPage__filter">
+        <div className={styles.searchPage}>
+            <div className={styles.searchPage__filter}>
                 <TuneOutlinedIcon />
                 <h2>FILTER</h2>
             </div>

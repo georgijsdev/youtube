@@ -1,25 +1,22 @@
 import React from 'react';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import RecommendedVideos from './RecommendedVideos';
-import SearchPage from './SearchPage';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Header, Sidebar, RecommendedVideos, SearchPage} from './components';
+import styles from './App.module.css';
 
 function App() {
   return (
-    <div className="app">
+    <div className={styles.app}>
       <Router>
         <Header />
          <Switch>
           <Route path="/search/:searchTerm">
-            <div className="app__page">
+            <div className={styles.app}>
               <Sidebar />
               <SearchPage />
             </div>
           </Route>
           <Route path="/">
-            <div className="app__page">
+            <div className={styles.app}>
               <Sidebar />
               <RecommendedVideos />
             </div>

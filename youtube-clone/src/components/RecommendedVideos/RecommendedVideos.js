@@ -1,13 +1,13 @@
 import React from 'react'
-import VideoCard from './VideoCard'
-import './RecommendedVideos.css'
+import {VideoCard} from '..'
+import styles from './RecommendedVideos.module.css'
 
 
 function RecommendedVideos() {
     return (
-        <div className="recommendedVideos">
+        <div className={styles.recommendedVideos}>
             <h2>Recommended</h2>
-            <div className="recommendedVideos__videos">
+            <div className={styles.recommendedVideos__videos}>
                 <VideoCard 
                     title="Become a Web Developer in 2020"
                     views="1.4M Views"

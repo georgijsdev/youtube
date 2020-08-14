@@ -1,6 +1,6 @@
 import React from 'react'
-import SidebarRow from './SidebarRow.js'
-import './Sidebar.css'
+import {SidebarRow} from '..'
+import styles from './Sidebar.module.css'
 
 // Imported Icons
 import HomeIcon from '@material-ui/icons/Home'
@@ -15,7 +15,7 @@ import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined'
 
 function Sidebar() {
     return (
-        <div className="sidebar">
+        <div className={styles.sidebar}>
             <SidebarRow selected Icon={HomeIcon} title="Home"/>
             <SidebarRow Icon={WhatshotIcon} title="Trending"/>
             <SidebarRow Icon={SubscriptionsIcon} title="Subscription"/>
